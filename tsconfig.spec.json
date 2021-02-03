@@ -2,10 +2,11 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
+    "types": ["jest"],
+    "typeRoots": [
+      "node_modules/@types"
+    ],
     "outDir": "./out-tsc/spec",
-    "types": [
-      "jasmine"
-    ]
   },
   "files": [
     "src/test.ts",
